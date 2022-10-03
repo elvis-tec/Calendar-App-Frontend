@@ -91,8 +91,6 @@ export const CalendarModal = () => {
         }
         
         if ( formValues.title.length <= 0 ) return;
-        
-        console.log(formValues);
 
         // TODO: 
         await startSavingEvent( formValues );
@@ -111,7 +109,7 @@ export const CalendarModal = () => {
         overlayClassName="modal-fondo"
         closeTimeoutMS={ 200 }
     >
-        <h1> Nuevo evento </h1>
+        <h1> New Event </h1>
         <hr />
         <form className="container" onSubmit={ onSubmit }>
 
