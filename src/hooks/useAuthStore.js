@@ -18,7 +18,7 @@ export const useAuthStore = () => {
 
             dispatch( onLogin({ name: data.name, uid: data.uid }) );
         } catch (error) {
-            dispatch( onLogout('Credenciales incorrectas') );
+            dispatch( onLogout('Wrong credentials') );
             setTimeout(()=>{
                 dispatch(clearErrorMessage());
             },1000);
@@ -38,7 +38,7 @@ export const useAuthStore = () => {
 
             dispatch( onLogin({ name: data.name, uid: data.uid }) );
         } catch (error) {
-            dispatch( onLogout(`Registro incorrecto ${ error.response.data?.msg } `) );
+            dispatch( onLogout(`Sign In failed ${ error.response.data?.msg } `) );
             setTimeout(()=>{
                 dispatch(clearErrorMessage());
             },1000);
@@ -58,7 +58,7 @@ export const useAuthStore = () => {
             dispatch( onLogin({ name: data.name, uid: data.uid }) );
         } catch (error) {
             localStorage.clear();
-            dispatch( onLogout(`Sesión no válida ${ error.response.data?.msg } `) );
+            dispatch( onLogout(`Invalid session ${ error.response.data?.msg } `) );
             setTimeout(()=>{
                 dispatch(clearErrorMessage());
             },1000);
