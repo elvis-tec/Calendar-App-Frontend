@@ -31,3 +31,7 @@ Generate the final app for production.
 ### `API endpoint`
 
 [Backend App.](https://github.com/elvis-tec/Calendar-App-Backend)
+
+### `Demo`
+
+[Here.](https://mern-calendar-elvistec.herokuapp.com/)
