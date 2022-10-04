@@ -12,6 +12,7 @@ export const FabDelete = () => {
   return (
     <button
         className="btn btn-danger fab-danger"
+        aria-label="btn-delete"
         onClick={ handleDelete }
         style={{
             display: hasEventSelected ? '': 'none'
